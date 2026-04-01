@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Catalog/">
+    <Project Path="Modules/Catalog/Catalog.Application/Catalog.Application.csproj" />
+    <Project Path="Modules/Catalog/Catalog.Domain/Catalog.Domain.csproj" />
+    <Project Path="Modules/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Ordering/">
+    <Project Path="Modules/Ordering/Ordering.Application/Ordering.Application.csproj" />
+    <Project Path="Modules/Ordering/Ordering.Domain/Ordering.Domain.csproj" />
+    <Project Path="Modules/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" />
+  </Folder>
+  <Project Path="Ecommerce.API/Ecommerce.API.csproj" />
+</Solution>
