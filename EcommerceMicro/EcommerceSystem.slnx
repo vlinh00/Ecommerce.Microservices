@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="BuildingBlocks/SharedKernel/SharedKernel.csproj" />
+  </Folder>
   <Folder Name="/Modules/" />
   <Folder Name="/Modules/Catalog/">
     <Project Path="Modules/Catalog/Catalog.Application/Catalog.Application.csproj" />
