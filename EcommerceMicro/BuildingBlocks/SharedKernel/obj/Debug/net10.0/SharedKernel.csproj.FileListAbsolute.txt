@@ -1,0 +1,12 @@
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/bin/Debug/net10.0/SharedKernel.deps.json
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/bin/Debug/net10.0/SharedKernel.dll
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/bin/Debug/net10.0/SharedKernel.pdb
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/SharedKernel.AssemblyInfoInputs.cache
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/SharedKernel.AssemblyInfo.cs
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/SharedKernel.csproj.CoreCompileInputs.cache
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/SharedKernel.sourcelink.json
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/SharedKernel.dll
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/refint/SharedKernel.dll
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/SharedKernel.pdb
+/workspaces/Ecommerce.Microservices/EcommerceMicro/BuildingBlocks/SharedKernel/obj/Debug/net10.0/ref/SharedKernel.dll
