@@ -1,6 +1,8 @@
 using Catalog.Application.Abstractions;
 using Catalog.Application.Features.Brands.CreateBrand;
+using Catalog.Application.Features.Brands.GetBrand;
 using Catalog.Application.Features.Categories.CreateCategory;
+using Catalog.Application.Features.Categories.GetCategory;
 using Catalog.Application.Features.Products.CreateProducts;
 using Catalog.Application.Features.Products.GetProduct;
 using Catalog.Infrastructure.Persistence;
@@ -26,7 +28,9 @@ public static class DependencyInjection
 
         // Handlers (Use cases)
         services.AddScoped<CreateCategoryHandler>();
+        services.AddScoped<GetCategoryHandler>();
         services.AddScoped<CreateBrandHandler>();
+        services.AddScoped<GetBrandHandler>();
         services.AddScoped<CreateProductHandler>();
         services.AddScoped<GetProductHandler>();
 

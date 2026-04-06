@@ -1,0 +1,1 @@
+public record GetCategoryQuery(Guid Id);
