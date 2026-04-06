@@ -4,3 +4,17 @@
 *.userosscache
 *.sln.docstates
 .vs/
+# Build folders
+bin/
+obj/
+
+# VS / Rider
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
