@@ -1,0 +1,1 @@
+public record CreateBrandCommand(string Name);
