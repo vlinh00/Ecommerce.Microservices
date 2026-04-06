@@ -6,7 +6,7 @@ services:
     container_name: ecommerce-sql
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=Password@123
+      - SA_PASSWORD=YourStrong!Pass123
     ports:
       - "1433:1433"
   

@@ -10,9 +10,9 @@ public class CreateCategoryHandler
         _categoryRepository = categoryRepository;
     }
 
-    public async Task<Guid> Handle(CreateCategoryCommand request)
+    public async Task<Guid> Handle(CreateCategoryCommand cmd)
     {
-        var category = new Category(request.Name);
+        var category = new Category(cmd.Name);
 
         await _categoryRepository.AddAsync(category);
         await _categoryRepository.SaveChangesAsync();
