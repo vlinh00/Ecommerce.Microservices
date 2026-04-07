@@ -6,6 +6,17 @@
   </ItemGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Persistence/" />
+    <Folder Include="Repositories/" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
+  </ItemGroup>
+
+
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

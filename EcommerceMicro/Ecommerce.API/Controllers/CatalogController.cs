@@ -1,6 +1,7 @@
 using Catalog.Application.Features.Brands.CreateBrand;
 using Catalog.Application.Features.Brands.GetBrand;
 using Catalog.Application.Features.Categories.CreateCategory;
+using Catalog.Application.Features.Categories.GetAllCategories;
 using Catalog.Application.Features.Categories.GetCategory;
 using Catalog.Application.Features.Products.CreateProducts;
 using Catalog.Application.Features.Products.GetProduct;
@@ -18,6 +19,7 @@ namespace Ecommerce.API.Controllers
         private readonly GetBrandHandler _getBrandHandler;
         private readonly CreateProductHandler _createProductHandler;
         private readonly GetProductHandler _getProductHandler;
+        private readonly GetAllCategoriesHandler _getAllCategoriesHandler;
 
         public CatalogController(
             CreateCategoryHandler createCategoryHandler, 
@@ -25,20 +27,29 @@ namespace Ecommerce.API.Controllers
             CreateBrandHandler createBrandHandler, 
             GetBrandHandler getBrandHandler,
             CreateProductHandler createProductHandler, 
-            GetProductHandler getProductHandler)
+            GetProductHandler getProductHandler,
+            GetAllCategoriesHandler getAllCategoriesHandler)
         {
             _createCategoryHandler = createCategoryHandler;
             _getCategoryHandler = getCategoryHandler;
             _createBrandHandler = createBrandHandler;
             _getBrandHandler = getBrandHandler;
             _createProductHandler = createProductHandler;
-            _getProductHandler = getProductHandler; 
+            _getProductHandler = getProductHandler;
+            _getAllCategoriesHandler = getAllCategoriesHandler;
         }
 
         [HttpPost("categories")]
         public async Task<IActionResult> CreateCategory(CreateCategoryCommand cmd)
         {
             var result = await _createCategoryHandler.Handle(cmd);
+            return Ok(result);
+        }
+
+        [HttpGet("categories")]
+        public async Task<IActionResult> GetAllCategories()
+        {
+            var result = await _getAllCategoriesHandler.Handle(new GetAllCategoriesQuery(), CancellationToken.None);
             return Ok(result);
         }
 

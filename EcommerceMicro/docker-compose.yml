@@ -9,7 +9,9 @@ services:
       - SA_PASSWORD=YourStrong!Pass123
     ports:
       - "1433:1433"
-  
+    volumes:
+      - sql_data:/var/opt/mssql
+
   dbeaver:
     image: dbeaver/cloudbeaver:latest
     container_name: ecommerce-dbeaver
@@ -17,3 +19,6 @@ services:
       - "8978:8978"
     depends_on:
       - sqlserver
+
+volumes:
+  sql_data:

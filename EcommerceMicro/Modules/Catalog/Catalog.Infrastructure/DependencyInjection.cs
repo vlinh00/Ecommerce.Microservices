@@ -2,6 +2,7 @@ using Catalog.Application.Abstractions;
 using Catalog.Application.Features.Brands.CreateBrand;
 using Catalog.Application.Features.Brands.GetBrand;
 using Catalog.Application.Features.Categories.CreateCategory;
+using Catalog.Application.Features.Categories.GetAllCategories;
 using Catalog.Application.Features.Categories.GetCategory;
 using Catalog.Application.Features.Products.CreateProducts;
 using Catalog.Application.Features.Products.GetProduct;
@@ -33,6 +34,7 @@ public static class DependencyInjection
         services.AddScoped<GetBrandHandler>();
         services.AddScoped<CreateProductHandler>();
         services.AddScoped<GetProductHandler>();
+        services.AddScoped<GetAllCategoriesHandler>();
 
         return services;
     }

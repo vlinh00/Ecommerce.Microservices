@@ -6,7 +6,12 @@
 
   <ItemGroup>
     <Folder Include="Features/Brands/GetBrand/" />
+    <Folder Include="Features/Categories/GetAllCategories/" />
     <Folder Include="Features/Categories/GetCategory/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
   </ItemGroup>
 
   <PropertyGroup>
